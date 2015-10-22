@@ -1,0 +1,9 @@
+#!/bin/bash
+
+file1=$1
+
+if [ -a $file1 ] && [ $2 ];then
+	changecapitals < $1 > $2
+else
+	echo "You need a second command line argument or the file you gave does not exist"
+fi
