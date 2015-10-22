@@ -5,5 +5,5 @@ file1=$1
 if [ -a $file1 ] && [ $2 ];then
 	changecapitals < $1 > $2
 else
-	echo "You need a second command line argument or the file you gave does not exist"
+	echo "error. usage: lc file1 file2. This will lowercase file1 and redirect it into file2."
 fi
